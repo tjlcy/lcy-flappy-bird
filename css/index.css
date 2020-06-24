@@ -1,0 +1,158 @@
+#game {
+    /* 定位使元素精准地达到某一个点 */
+    position: relative;
+    width: 100%;
+    /* 使整体宽度与浏览器宽度一致 */
+    height: 600px;
+    /* 高度设置因为背景图片为600px */
+    background-image: url(../img/sky.png);
+}
+
+
+/* 游戏开始 */
+
+.bird {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    /* 位置水平居中 left50% - width的一半*/
+    top: 235px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/birds.png);
+}
+
+.start {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    /* 文字垂直居中 height= line-height  */
+    text-align: center;
+    /* 文字水平居中 */
+    left: 50%;
+    margin-left: -100px;
+    /* 位置水平居中 left50% - width的一半*/
+    top: 295px;
+    font-weight: bolder;
+    /* 文字加粗 */
+}
+
+.start-white {
+    color: #fff;
+    font-size: 24px;
+}
+
+.start-blue {
+    color: #09f;
+    font-size: 36px;
+}
+
+
+/* 游戏进行时 */
+
+.score {
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bolder;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 元素宽度的一半 */
+    /* 在不知道元素宽度的情况下，水平居中的方案 */
+}
+
+
+/* 遮罩层 */
+
+.mask {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* 形成遮罩层 */
+    background-color: #000;
+    opacity: 0.5;
+    /* 透明度50% */
+}
+
+
+/* 游戏结束 */
+
+.end {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 水平居中 */
+    top: 70px;
+    /* mask 和 end 都是绝对定位，后来者居上，不需要添加 z-index */
+    text-align: center;
+    /* 文字水平居中 */
+}
+
+.end .over {
+    font-size: 35px;
+    font-weight: bolder;
+    color: red;
+}
+
+.end .result,
+.end .final-result {
+    color: #ff0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.end .rank-list {
+    margin-top: 20px;
+    color: #09f;
+    text-align: left;
+}
+
+.end .rank-item {
+    height: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    /* 水平居中 */
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.end .rank-degree {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #8eb9f5;
+    display: inline-block;
+    /* 行间元素不能设置宽高，需要转换成行块级元素 */
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.end .first {
+    background-color: #f54545;
+}
+
+.end .second {
+    background-color: #ff8547;
+}
+
+.end .third {
+    background-color: #ffac38;
+}
+
+.end .rank-score {
+    width: 30px;
+    display: inline-block;
+}
+
+.end .restart {
+    color: #09f;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}

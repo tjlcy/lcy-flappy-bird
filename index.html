@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flappy bird</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 命名语义化 -->
+    <div id="game">
+        <!-- 游戏开始 -->
+        <div class="bird"></div>
+        <div class="start start-white start-blue">点击开始</div>
+        <!-- 游戏进行中 -->
+        <div class="score">0</div>
+        <!-- 游戏结束时跳出的半透明的一层 一般称作mask -->
+        <div class="mask"></div>
+        <!-- 游戏结束 -->
+        <div class="end">
+            <div class="over">Game Over</div>
+            <div class="result">Your Results:</div>
+            <div class="final-result">0</div>
+            <ul class="rank-list">
+                <li class="rank-item">
+                    <span class="rank-degree first">1</span>
+                    <span class="rank-score">14</span>
+                    <span class="rank-time">2020.06.24 20:14:50</span>
+                </li>
+                <li class="rank-item">
+                    <span class="rank-degree second">2</span>
+                    <span class="rank-score">12</span>
+                    <span class="rank-time">2020.06.24 20:14:50</span>
+                </li>
+                <li class="rank-item">
+                    <span class="rank-degree third">3</span>
+                    <span class="rank-score">10</span>
+                    <span class="rank-time">2020.06.24 20:14:50</span>
+                </li>
+            </ul>
+            <!-- 重新开始 -->
+            <div class="restart">重新开始</div>
+        </div>
+    </div>
+</body>
+
+</html>
