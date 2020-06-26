@@ -20,6 +20,7 @@
     width: 30px;
     height: 30px;
     background-image: url(../img/birds.png);
+    transition: top 0.3s linear;
 }
 
 .start {
@@ -36,6 +37,8 @@
     top: 295px;
     font-weight: bolder;
     /* 文字加粗 */
+    transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .start-white {
@@ -75,6 +78,7 @@
     background-color: #000;
     opacity: 0.5;
     /* 透明度50% */
+    display: none;
 }
 
 
@@ -89,6 +93,7 @@
     /* mask 和 end 都是绝对定位，后来者居上，不需要添加 z-index */
     text-align: center;
     /* 文字水平居中 */
+    display: none;
 }
 
 .end .over {
