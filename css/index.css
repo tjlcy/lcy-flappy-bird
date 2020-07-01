@@ -79,6 +79,7 @@
     opacity: 0.5;
     /* 透明度50% */
     display: none;
+    z-index: 2;
 }
 
 
@@ -94,6 +95,7 @@
     text-align: center;
     /* 文字水平居中 */
     display: none;
+    z-index: 3;
 }
 
 .end .over {
@@ -160,4 +162,35 @@
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
+}
+
+
+/* 柱子 */
+
+
+/* 共有 */
+
+.pipe {
+    position: absolute;
+    /* left: 300px; */
+    width: 52px;
+    height: 150px;
+    z-index: 1;
+}
+
+
+/* 上柱子 */
+
+.pipe.pipe-up {
+    top: 0;
+    background-image: url(../img/pipe2.png);
+    background-position-y: bottom;
+}
+
+
+/* 下柱子 */
+
+.pipe.pipe-bottom {
+    bottom: 0;
+    background-image: url(../img/pipe1.png);
 }
